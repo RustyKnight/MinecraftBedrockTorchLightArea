@@ -1,0 +1,42 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "minecraft:armor_stand",
+            "min_engine_version": "1.8.0",
+            "materials": {
+                "default": "armor_stand",
+                "semi_transparent": "kz_alpha_end",
+                "alpha": "npc",
+                "flat": "entity"
+            },
+            "textures": {
+                "default": "textures/entity/armor_stand",
+                "torch_light": "textures/addon/torch_light"
+            },
+            "animations": {
+                "default_pose": "animation.armor_stand.default_pose"
+            },
+            "scripts": {
+                "animate": [
+                    "controller.pose",
+                    "controller.wiggling"
+                ],
+                "pre_animation": [
+                    "v.torch_show = query.get_equipped_item_name(0) == 'torch';"
+                ]
+            },
+            "geometry": {
+                "default": "geometry.armor_stand",
+                "torch_light": "geometry.torch_light"
+            },
+            "render_controllers": [
+                "controller.render.armor_stand",
+                {
+                    "controller.render.torch_light": "v.torch_show"
+                }
+            ],
+            "enable_attachables": true
+        }
+    }
+}

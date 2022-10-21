@@ -1,0 +1,18 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.torch_light": {
+            "geometry": "Geometry.torch_light",
+            "materials": [
+                {
+                    "*": "Material.semi_transparent"
+                }
+            ],
+            "textures": [
+                "Texture.torch_light"
+            ],
+            "ignore_lighting": true,
+            "light_color_multiplier": 1.5
+        }
+    }
+}
