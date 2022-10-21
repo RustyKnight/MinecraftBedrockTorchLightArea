@@ -1,4 +1,4 @@
-# Minecraft Bedrock, Golem Spawn/Village Boundries V0.0.1
+# Minecraft Bedrock, Torch Light Area V0.0.1
 
 ![MinecraftBedrock](https://img.shields.io/badge/MinecraftBedrock-1.19.30-orange)
 
